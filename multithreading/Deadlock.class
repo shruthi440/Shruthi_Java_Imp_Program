@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.multi.www;
+
+public class Deadlock {
+   public Deadlock() {
+   }
+
+   public static void main(String[] args) {
+      String A = "java";
+      String B = "python";
+      Thread t1 = new 1();
+      Thread t2 = new 2();
+      t1.start();
+      t2.start();
+   }
+}

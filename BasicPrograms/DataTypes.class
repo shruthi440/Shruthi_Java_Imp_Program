@@ -1,0 +1,32 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class DataTypes {
+   int i;
+   byte b;
+   short s;
+   long l;
+   float f;
+   double d;
+   char c;
+   boolean flag;
+
+   public DataTypes() {
+   }
+
+   void method() {
+      System.out.println("integer value=====>" + this.i);
+      System.out.println("byte value=====>" + this.b);
+      System.out.println("short value=====>" + this.s);
+      System.out.println("long value=====>" + this.l);
+      System.out.println("float value=====>" + this.f);
+      System.out.println("double value=====>" + this.d);
+      System.out.println("character value=====>" + this.c);
+      System.out.println("boolean value=====>" + this.flag);
+   }
+
+   public static void main(String[] args) {
+      DataTypes obj1 = new DataTypes();
+      obj1.method();
+   }
+}

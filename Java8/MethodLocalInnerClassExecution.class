@@ -1,0 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+public class MethodLocalInnerClassExecution {
+   public MethodLocalInnerClassExecution() {
+   }
+
+   void show() {
+      String s = "java";
+      1InnerClass obj = new 1InnerClass(this, s);
+      obj.method1();
+   }
+
+   public static void main(String[] args) {
+      MethodLocalInnerClassExecution obj = new MethodLocalInnerClassExecution();
+      obj.show();
+   }
+}

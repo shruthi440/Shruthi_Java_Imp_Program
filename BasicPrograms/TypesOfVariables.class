@@ -1,0 +1,52 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+import java.io.PrintStream;
+
+public class TypesOfVariables {
+   int a = 10;
+   static int b = 20;
+   static int e = 50;
+   int d = 120;
+
+   public TypesOfVariables() {
+   }
+
+   void method1() {
+      int c = 30;
+      int d = 180;
+      int e = 150;
+      System.out.println("instance variable=====>" + this.a);
+      System.out.println("Local variable======>" + c);
+      System.out.println("===========================");
+      System.out.println("instance variable=====>" + (new TypesOfVariables()).d);
+      System.out.println("Local variable=========>" + d);
+      System.out.println("============Static variables=========");
+      System.out.println("static variable=====>" + b);
+      PrintStream var10000 = System.out;
+      StringBuilder var10001 = new StringBuilder("static variable=====>");
+      new TypesOfVariables();
+      var10000.println(var10001.append(b).toString());
+      System.out.println("static variable=====>" + b);
+      System.out.println("===========================");
+      System.out.println("static variable=====>" + e);
+      var10000 = System.out;
+      var10001 = new StringBuilder("static variable=====>");
+      new TypesOfVariables();
+      var10000.println(var10001.append(TypesOfVariables.e).toString());
+      System.out.println("static variable=====>" + TypesOfVariables.e);
+   }
+
+   void method2() {
+      System.out.println("=======================");
+      System.out.println("instance variable=====>" + this.a);
+      System.out.println("Static Variable=====>" + b);
+   }
+
+   public static void main(String[] args) {
+      TypesOfVariables obj1 = new TypesOfVariables();
+      TypesOfVariables obj2 = new TypesOfVariables();
+      obj1.method1();
+      obj2.method2();
+   }
+}

@@ -1,0 +1,38 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.iostream.www;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+public class BufferedStream {
+   public BufferedStream() {
+   }
+
+   void fileOperations() throws Exception {
+      BufferedInputStream bis = new BufferedInputStream(new FileInputStream("D:\\IOE\\file5.txt"));
+      System.out.println("Connection created");
+
+      int x;
+      while((x = bis.read()) != -1) {
+         System.out.print((char)x);
+      }
+
+      System.out.println();
+      System.out.println("Data Retrieved");
+      bis.close();
+      new BufferedOutputStream(new FileOutputStream("file path"));
+      new BufferedReader(new FileReader("filepath"));
+      new BufferedWriter(new FileWriter("filepath"));
+   }
+
+   public static void main(String[] args) throws Exception {
+      BufferedStream bs = new BufferedStream();
+      bs.fileOperations();
+   }
+}

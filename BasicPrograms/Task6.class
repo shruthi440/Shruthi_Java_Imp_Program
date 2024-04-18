@@ -1,0 +1,17 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Task6 {
+   static int x = 10;
+
+   public Task6() {
+   }
+
+   public static void main(String[] args) {
+      new Task6();
+      new Task6();
+      x = 20;
+      System.out.print(x + " ");
+      System.out.println(x);
+   }
+}

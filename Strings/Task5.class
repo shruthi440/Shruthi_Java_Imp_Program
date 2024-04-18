@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.strings.www;
+
+public class Task5 {
+   public Task5() {
+   }
+
+   public String firstTwo(String str) {
+      return str.length() >= 2 ? str.substring(0, 2) : str;
+   }
+
+   public static void main(String[] args) {
+      String result = (new Task5()).firstTwo("Hello");
+      System.out.println(result);
+   }
+}

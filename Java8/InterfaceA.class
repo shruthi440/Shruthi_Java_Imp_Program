@@ -1,0 +1,10 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+@FunctionalInterface
+public interface InterfaceA {
+   void method1();
+
+   default void method2(int a) {
+   }
+}

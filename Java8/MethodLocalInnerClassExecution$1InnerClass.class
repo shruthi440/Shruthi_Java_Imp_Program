@@ -1,0 +1,14 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+class MethodLocalInnerClassExecution$1InnerClass {
+   MethodLocalInnerClassExecution$1InnerClass(MethodLocalInnerClassExecution var1, String var2) {
+      this.this$0 = var1;
+      this.val$s = var2;
+   }
+
+   void method1() {
+      String data = this.val$s + " is awesome";
+      System.out.println(data);
+   }
+}

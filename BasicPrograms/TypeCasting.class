@@ -1,0 +1,39 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class TypeCasting {
+   public TypeCasting() {
+   }
+
+   void implicit() {
+      System.out.println("Performing implicit type casting");
+      byte b = 50;
+      System.out.println("byte value======>" + b);
+      System.out.println("int value======>" + b);
+      char c = 'A';
+      System.out.println("char value======>" + c);
+      System.out.println("int value======>" + c);
+   }
+
+   void explicit() {
+      System.out.println("Performing explicit type casting");
+      int x = 60;
+      byte b = (byte)x;
+      System.out.println("byte value======>" + b);
+      System.out.println("int value======>" + x);
+      int d = 500;
+      byte e = (byte)d;
+      System.out.println("byte value======>" + e);
+      System.out.println("int value======>" + d);
+      float f = 10.111F;
+      byte g = (byte)((int)f);
+      System.out.println("float value======>" + f);
+      System.out.println("byte value======>" + g);
+   }
+
+   public static void main(String[] args) {
+      TypeCasting obj = new TypeCasting();
+      obj.implicit();
+      obj.explicit();
+   }
+}

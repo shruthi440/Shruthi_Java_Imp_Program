@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+public class NestedInnerClassExecution {
+   private void method1() {
+      System.out.println("I am from outer class");
+   }
+
+   NestedInnerClassExecution() {
+      System.out.println("Outer class Constructor");
+   }
+
+   public static void main(String[] args) {
+      NestedInnerClassExecution var10002 = new NestedInnerClassExecution();
+      var10002.getClass();
+      InnerClass obj = new InnerClass(var10002);
+      obj.method2();
+   }
+}

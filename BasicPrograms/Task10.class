@@ -1,0 +1,45 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Task10 {
+   public Task10() {
+   }
+
+   void implicit() {
+      byte b = 10;
+      System.out.println("byte value======>" + b);
+      System.out.println("short value======>" + b);
+      short s = (short)(b + 1);
+      int i = s++;
+      System.out.println("int value======>" + i);
+      System.out.println("short value======>" + s);
+      long l = (long)i;
+      System.out.println("long value======>" + --l);
+      float f = (float)l;
+      System.out.println("float value======>" + (f + (float)b));
+      double d = (double)(--l);
+      System.out.println("double value======>" + d);
+      show();
+      if (d != (double)f) {
+         System.out.println("equal");
+      } else {
+         System.out.println("not equal");
+      }
+
+   }
+
+   public static void main(String[] args) {
+      Task10 obj = new Task10();
+      obj.implicit();
+   }
+
+   static void show() {
+      char c = 'A';
+      ++c;
+   }
+
+   String method1() {
+      String s = "Implicit casting is done by the compiler automatically";
+      return s;
+   }
+}

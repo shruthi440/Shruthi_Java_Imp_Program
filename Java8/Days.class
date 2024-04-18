@@ -1,0 +1,15 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+public enum Days {
+   sunday,
+   monday,
+   tuesday,
+   wednesday,
+   thursday,
+   friday,
+   saturday;
+
+   private Days() {
+   }
+}

@@ -1,0 +1,72 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.collections.www;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+public class LinkedListExample {
+   public LinkedListExample() {
+   }
+
+   void method() {
+      System.out.println("Implementing LinkedList");
+      LinkedList<Integer> ll = new LinkedList();
+      ll.add(10);
+      ll.add((Object)null);
+      ll.add(42);
+      ll.add(10);
+      ll.add(345);
+      System.out.println("arrayList:" + ll);
+      System.out.println(ll.size());
+      System.out.println(ll.isEmpty());
+      System.out.println(ll.remove(4));
+      System.out.println(ll.contains("shruthi"));
+      System.out.println(ll);
+      ll.add(2, 100);
+      System.out.println(ll);
+      System.out.println(ll.get(1));
+      System.out.println("Retrieving the elements for using for loop");
+
+      for(int i = 0; i < ll.size(); ++i) {
+         System.out.println(ll.get(i));
+      }
+
+      System.out.println("Retrieving the elements for using for each loop");
+      Iterator var3 = ll.iterator();
+
+      while(var3.hasNext()) {
+         Object o = var3.next();
+         System.out.println(o);
+      }
+
+      System.out.println("Retrieving the elements for using Iterator Interface");
+      Iterator i = ll.iterator();
+
+      while(i.hasNext()) {
+         System.out.println(i.next());
+      }
+
+      System.out.println("Retrieving the listIterator");
+      ListIterator li = ll.listIterator();
+      System.out.println("====================");
+
+      while(li.hasNext()) {
+         System.out.println(li.next() + " ");
+      }
+
+      System.out.println("====================");
+
+      while(li.hasPrevious()) {
+         System.out.println(li.previous());
+      }
+
+      System.out.println(ll.getFirst());
+      System.out.println(ll.getLast());
+   }
+
+   public static void main(String[] args) {
+      LinkedListExample obj = new LinkedListExample();
+      obj.method();
+   }
+}

@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.oops.com;
+
+public class Task1Extension extends Task1 {
+   public Task1Extension() {
+   }
+
+   void display() {
+      System.out.println("hi");
+      super.method4();
+   }
+
+   public static void main(String[] args) {
+      (new Task1Extension()).display();
+   }
+}

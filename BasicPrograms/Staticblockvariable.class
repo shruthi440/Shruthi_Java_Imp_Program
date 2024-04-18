@@ -1,0 +1,30 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Staticblockvariable {
+   static int x = method1();
+   static String data;
+
+   static {
+      System.out.println("1st static block====>" + x);
+      data = method2();
+      System.out.println("2nd static block====>" + data);
+   }
+
+   public Staticblockvariable() {
+   }
+
+   static int method1() {
+      System.out.println("Method-1 called");
+      return 100;
+   }
+
+   public static void main(String[] args) {
+      System.out.println("Main()-called");
+   }
+
+   static String method2() {
+      System.out.println("Method2 called");
+      return "i love programming language";
+   }
+}

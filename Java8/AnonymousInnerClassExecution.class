@@ -1,0 +1,13 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java8.www;
+
+public class AnonymousInnerClassExecution {
+   static OuterClass out = new 1();
+
+   public AnonymousInnerClassExecution() {
+   }
+
+   public static void main(String[] args) {
+      out.print();
+   }
+}

@@ -1,0 +1,56 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.collections.www;
+
+import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.Vector;
+
+public class VectorExample {
+   public VectorExample() {
+   }
+
+   void method() {
+      System.out.println("Implementing vector");
+      Vector v = new Vector();
+      v.add(10);
+      v.add((Object)null);
+      v.add(100);
+      v.add(10);
+      v.add(36);
+      v.add(450);
+      v.add(123);
+      v.add(84);
+      System.out.println(v);
+      System.out.println("======for loop=====");
+
+      for(int i = 0; i < v.size(); ++i) {
+         System.out.println(v.get(i));
+      }
+
+      System.out.println("=======for each loop==============");
+      Iterator var3 = v.iterator();
+
+      while(var3.hasNext()) {
+         Object o = var3.next();
+         System.out.println(o);
+      }
+
+      System.out.println("=======enumeration iterator============");
+      Enumeration e = v.elements();
+
+      while(e.hasMoreElements()) {
+         System.out.println(e.nextElement());
+      }
+
+      v.addElement(5000);
+      v.removeElement(123);
+      System.out.println(v);
+      System.out.println(v.lastElement());
+      System.out.println(v.firstElement());
+   }
+
+   public static void main(String[] args) {
+      VectorExample obj = new VectorExample();
+      obj.method();
+   }
+}

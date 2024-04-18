@@ -1,0 +1,22 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Variables {
+   int a = 10;
+   int A = 20;
+   int Variables = 40;
+   int String = 32;
+
+   public Variables() {
+   }
+
+   void method() {
+      System.out.println(this.a);
+      System.out.println(this.A);
+   }
+
+   public static void main(String[] args) {
+      Variables obj1 = new Variables();
+      obj1.method();
+   }
+}

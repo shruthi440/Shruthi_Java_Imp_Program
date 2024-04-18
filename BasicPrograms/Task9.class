@@ -1,0 +1,35 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+import java.io.PrintStream;
+
+public class Task9 {
+   static int a = 0;
+   int b = 0;
+
+   Task9() {
+      ++a;
+      ++this.b;
+      System.out.println("Static variable======" + a);
+      System.out.println("instance variable======" + this.b);
+      System.out.println("===========");
+   }
+
+   void display() {
+      System.out.println("===Accessing static variables======");
+      System.out.println(a);
+      System.out.println(a);
+      PrintStream var10000 = System.out;
+      new Task9();
+      var10000.println(a);
+   }
+
+   public static void main(String[] args) {
+      new Task9();
+      new Task9();
+      new Task9();
+      new Task9();
+      System.out.println("---------------------------------------");
+      (new Task9()).display();
+   }
+}

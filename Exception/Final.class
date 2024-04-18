@@ -1,0 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.exception.www;
+
+public class Final {
+   final int a = 10;
+
+   public Final() {
+   }
+
+   final void method() {
+      System.out.println("ClassA method1 called");
+      System.out.println(10);
+   }
+
+   public static void main(String[] args) {
+      (new Final()).method();
+   }
+}

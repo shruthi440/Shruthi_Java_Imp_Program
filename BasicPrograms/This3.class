@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class This3 {
+   public This3() {
+   }
+
+   This3 method1() {
+      System.out.println("Method-1 called");
+      return this;
+   }
+
+   public static void main(String[] args) {
+      new This3();
+   }
+}

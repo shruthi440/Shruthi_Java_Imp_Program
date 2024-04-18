@@ -1,0 +1,26 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.oops.com;
+
+public class Encapsulation1 {
+   private int studentRollNumber;
+   private String studentName;
+
+   public Encapsulation1() {
+   }
+
+   public int getStudentRollNumber() {
+      return this.studentRollNumber;
+   }
+
+   public void setStudentRollNumber(int studentRollNumber) {
+      this.studentRollNumber = studentRollNumber;
+   }
+
+   public String getStudentName() {
+      return this.studentName;
+   }
+
+   public void setStudentName(String studentName) {
+      this.studentName = studentName;
+   }
+}

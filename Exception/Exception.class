@@ -1,0 +1,29 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.exception.www;
+
+public class Exception extends Throwable {
+   public Exception() {
+   }
+
+   void method() {
+      String s = null;
+      System.out.println(10);
+
+      try {
+         System.out.println("Try block executed");
+         System.out.println("Division:10");
+         System.out.println("length:" + ((String)s).length());
+      } catch (NullPointerException | ArithmeticException var6) {
+         System.out.println("Catch block executed");
+         var6.printStackTrace();
+      } finally {
+         System.out.println("finally block executed");
+      }
+
+      System.out.println(30);
+   }
+
+   public static void main(String[] args) {
+      (new Exception()).method();
+   }
+}

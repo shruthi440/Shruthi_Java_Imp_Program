@@ -1,0 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Finalize {
+   public Finalize() {
+   }
+
+   void show() {
+      System.out.println("Show method called");
+   }
+
+   public static void main(String[] args) {
+      new Finalize();
+      new Finalize();
+      Finalize obj1 = null;
+      System.gc();
+   }
+}

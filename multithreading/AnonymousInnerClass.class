@@ -1,0 +1,11 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.multi.www;
+
+public class AnonymousInnerClass {
+   public AnonymousInnerClass() {
+   }
+
+   public static void main(String[] args) {
+      (new 1()).method();
+   }
+}

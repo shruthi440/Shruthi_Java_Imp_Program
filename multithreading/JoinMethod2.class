@@ -1,0 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.multi.www;
+
+public class JoinMethod2 extends Thread {
+   public JoinMethod2() {
+   }
+
+   public static void main(String[] args) throws InterruptedException {
+      JoinMethod1 obj = new JoinMethod1();
+      obj.start();
+      obj.join();
+
+      for(int i = 1; i <= 5; ++i) {
+         System.out.println("Run2() executed=====>" + i);
+      }
+
+   }
+}

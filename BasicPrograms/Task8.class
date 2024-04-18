@@ -1,0 +1,28 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Task8 {
+   static int x = m1();
+
+   static {
+      System.out.println(x);
+      x += 20;
+   }
+
+   public Task8() {
+   }
+
+   public static void main(String[] args) {
+      System.out.println(x);
+   }
+
+   static int m1() {
+      x = 50;
+      return m2();
+   }
+
+   static int m2() {
+      System.out.println(x);
+      return 100;
+   }
+}

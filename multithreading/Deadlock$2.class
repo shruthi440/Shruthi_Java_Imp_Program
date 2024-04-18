@@ -1,0 +1,27 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.multi.www;
+
+class Deadlock$2 extends Thread {
+   Deadlock$2() {
+   }
+
+   public void run() {
+      String var1 = "java";
+      synchronized("java") {
+         System.out.println("Thread 2 locked on B");
+
+         try {
+            Thread.sleep(100L);
+         } catch (Exception var4) {
+            var4.getStackTrace();
+         }
+
+         String var2 = "python";
+         synchronized("python") {
+            System.out.println("Thread 2 locked on A");
+         }
+
+         System.out.println("No thread locked");
+      }
+   }
+}

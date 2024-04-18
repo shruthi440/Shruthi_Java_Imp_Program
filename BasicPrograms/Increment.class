@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Increment {
+   public Increment() {
+   }
+
+   void method() {
+      int i = 4;
+      int j = 21;
+      ++i;
+      int k = i * 7 + 2 - j--;
+      System.out.println("k=" + k);
+   }
+
+   public static void main(String[] args) {
+      (new Increment()).method();
+   }
+}

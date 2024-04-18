@@ -1,0 +1,50 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class SwitchCase {
+   public SwitchCase() {
+   }
+
+   void method1() {
+      System.out.println("Implementing switch case");
+      int a = 500;
+      byte b = 40;
+      int x = true;
+      switch (b + 10 + 15) {
+         case 10:
+            System.out.println("case 10 got executed");
+            System.out.println("a value is :" + a);
+            break;
+         case 20:
+            System.out.println("case 20 got executed");
+            System.out.println("a value is :" + a);
+            break;
+         case 30:
+            System.out.println("case 30 got executed");
+            System.out.println("a value is :" + a);
+            break;
+         case 50:
+            System.out.println("case 50 got executed");
+            System.out.println("a value is :" + a);
+            break;
+         case 60:
+            System.out.println("case 60 got executed");
+            System.out.println("a value is :" + a);
+            break;
+         case 65:
+            System.out.println("case 65 got executed");
+            System.out.println("int and char are compatible");
+            System.out.println("a value is :" + a);
+            break;
+         default:
+            System.out.println("No case labels got triggered with the key values");
+            System.out.println("a value is :" + a);
+      }
+
+      System.out.println("compiler came out from the switch case");
+   }
+
+   public static void main(String[] args) {
+      (new SwitchCase()).method1();
+   }
+}

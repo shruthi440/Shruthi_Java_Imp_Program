@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.java.www;
+
+public class Staticblock {
+   static {
+      System.out.println("First-static block");
+      System.out.println("Second-static block");
+   }
+
+   public Staticblock() {
+   }
+
+   public static void main(String[] args) {
+      System.out.println("Hello world");
+   }
+}

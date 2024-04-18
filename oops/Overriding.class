@@ -1,0 +1,16 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package com.oops.com;
+
+public class Overriding {
+   public Overriding() {
+   }
+
+   Overriding method() {
+      System.out.println("Overriding called");
+      return this;
+   }
+
+   void method2() {
+      System.out.println("hi");
+   }
+}
